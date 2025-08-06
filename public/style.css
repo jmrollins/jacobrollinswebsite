@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #333;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    transform: translateY(-3px);
+    background-color: #444;
+}
+
+.buttons a.github {
+    background-color: #24292f;
+}
+
+.buttons a.linkedin {
+    background-color: #0077b5;
+}
+
+.buttons a.github:hover {
+    background-color: #3b3f45;
+}
+
+.buttons a.linkedin:hover {
+    background-color: #005983;
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
