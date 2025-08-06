@@ -1,11 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/jacodobm/jacobrollins.com
-    - /bin/echo "Starting deployment..."
-    - /bin/cp -R * $DEPLOYPATH
-    - cd $DEPLOYPATH
-    - /bin/echo "Installing dependencies..."
-    - /usr/local/bin/npm install --production
-    - /bin/echo "Restarting app..."
-    - /usr/local/bin/npm run start
+    - export DEPLOYPATH=/home/jacodobm/jacobrollins.com/
+    - /bin/echo "Deploying files to $DEPLOYPATH"
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp index.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
