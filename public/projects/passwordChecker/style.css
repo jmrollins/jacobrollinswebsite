@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  background: #1e3c72;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.strength-0 { color: #ff4d4d; }  
+.strength-1 { color: #ff944d; }  
+.strength-2 { color: #ffd24d; }  
+.strength-3 { color: #9fdf9f; }  
+.strength-4 { color: #4dff88; }  
+
+
+#strength-output {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#tips-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#back-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+

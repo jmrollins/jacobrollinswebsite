@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jmrollins/jacobrollinswebsite#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "zxcvbn": "^4.4.2"
   }
 }
