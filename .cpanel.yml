@@ -1,8 +1,5 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jacodobm/jacobrollins.com/
     - /bin/echo "Deploying files to $DEPLOYPATH"
-    - /bin/cp -R public $DEPLOYPATH
-    - /bin/cp index.js $DEPLOYPATH
-    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
